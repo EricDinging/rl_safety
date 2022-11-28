@@ -128,6 +128,11 @@
     $$
     $\mathcal{D} = \{\tau_i\}_{i=1,...,N}$ is the set of trajectories.
 
+    Delete the path rewards in a trajectory, which is unecessary.
+    $$
+    \nabla_{\theta} J(\pi_{\theta}) = E_{\tau \sim \pi_{\theta}}{\sum_{t=0}^{T} \nabla_{\theta} \log \pi_{\theta}(a_t |s_t) \sum_{t'=t}^T R(s_{t'}, a_{t'}, s_{t'+1})}.
+    $$
+
 
 \section{Ideas}
     \subsection{Observation}

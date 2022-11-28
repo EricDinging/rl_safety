@@ -14,6 +14,13 @@ def mlp(sizes, activation=nn.Tanh, output_activation=nn.Identity):
         layers += [nn.Linear(sizes[j], sizes[j+1]), act()]
     return nn.Sequential(*layers)
 
+def reward_to_go(rews):
+    n = len(rews)
+    rtgs = np.zeros_like(rews)
+    for i in reversed(range(n)):
+        rtgs[i] = rews[i] + (rtgs[i+1] if i+1 < n else 0)
+    return rtgs
+
 def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2, 
           epochs=50, batch_size=5000, render=False):
 
@@ -52,13 +59,12 @@ def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2,
         # make some empty lists for logging.
         batch_obs = []          # for observations
         batch_acts = []         # for actions
-        batch_weights = []      # for R(tau) weighting in policy gradient
+        batch_weights = []      # for reward-to-go weighting in policy gradient
         batch_rets = []         # for measuring episode returns
         batch_lens = []         # for measuring episode lengths
 
         # reset episode-specific variables
         obs = env.reset()       # first obs comes from starting distribution
-        obs = obs[0]
         done = False            # signal from environment that episode is over
         ep_rews = []            # list for rewards accrued throughout ep
 
@@ -77,7 +83,7 @@ def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2,
 
             # act in the environment
             act = get_action(torch.as_tensor(obs, dtype=torch.float32))
-            obs, rew, done, _ , _= env.step(act)
+            obs, rew, done, _ = env.step(act)
 
             # save action, reward
             batch_acts.append(act)
@@ -89,12 +95,11 @@ def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2,
                 batch_rets.append(ep_ret)
                 batch_lens.append(ep_len)
 
-                # the weight for each logprob(a|s) is R(tau)
-                batch_weights += [ep_ret] * ep_len
+                # the weight for each logprob(a_t|s_t) is reward-to-go from t
+                batch_weights += list(reward_to_go(ep_rews))
 
                 # reset episode-specific variables
                 obs, done, ep_rews = env.reset(), False, []
-                obs = obs[0]
 
                 # won't render again this epoch
                 finished_rendering_this_epoch = True
@@ -126,5 +131,5 @@ if __name__ == '__main__':
     parser.add_argument('--render', action='store_true')
     parser.add_argument('--lr', type=float, default=1e-2)
     args = parser.parse_args()
-    print('\nUsing simplest formulation of policy gradient.\n')
+    print('\nUsing reward-to-go formulation of policy gradient.\n')
     train(env_name=args.env_name, render=args.render, lr=args.lr)
