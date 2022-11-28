@@ -80,6 +80,54 @@
     \caption{RL Algorithm}
     \label{fig:ag}
   \end{figure}
+  \subsection{Model-Free vs. Model-Based}
+    Whether the agent has access to (or learns) a model of the environment. The model is a function that predicts state transitions and rewards.
+
+    Model allows the agent to think ahead. Such a model is usually not available to the agent. If there is no such models, it has to learn the model purely from experience.  The biggest challenge is that bias in the model can be exploited by the agent, resulting in an agent which performs well with respect to the learned model, but behaves sub-optimally (or super terribly) in the real environment.
+
+    While model-free methods forego the potential gains in sample efficiency from using a model, they tend to be easier to implement and tune. 
+  \subsection{What to Learn}
+    \begin{enumerate}
+      \item Policies
+      \item Action-value functions
+      \item Value functions
+      \item Environment models
+    \end{enumerate}
+  \subsection{What to Learn in Model-Free RL}
+    \begin{enumerate}
+      \item Policy Optimization: $\pi_\theta(a|s)$. It optimizes the parameters $\theta$ either directly by gradient ascent on the performance objective $J(\pi_{\theta})$, or indirectly, by maximizing local approximations of $J(\pi_{\theta})$. This is always performed on-policy, each update only uses data collected while acting according to the most recent version of the policy. Also involves learning an approximator $V_\phi(s)$ for the on-policy value function $V^\pi(s)$
+      \item Q-Learning: Learn an approximator $Q_\theta(s, a)$ for the optimal action-value function $Q^*(s, a)$. This optimization is almost always performed off-policy, each update can use data collected at any point during training. $a(s) = \arg\max_a Q_\theta(s, a)$
+    \end{enumerate}
+
+    Policy Optimization is more stable and reliable, but less sample efficient.
+  \subsection{What to Learn in Model-Based RL}
+    \begin{enumerate}
+      \item Background: Pure Planning. Each iteration, the agent observes the model, computes a plan with respect to the model (use learned value function)
+      \item Expert iteration:  Using and learning an explicit representation of the policy. Uses a planning algorithm to generate candidate actions for the plan by sampling from the current policy.
+      \item Data augmentation for Model-Free methods
+      \item Embedding planning loops into policies
+    \end{enumerate}
+\section{Policy Optimization}
+    Want to maximize the expected return $J(\pi_{\theta}) = E_{\tau \sim \pi_{\theta}}[R(\tau)]$. $R(\tau)$ gives the finite-horizon undiscounted return.
+    
+    We would like to optimize the policy by gradient ascent, 
+    $$
+    \theta_{k+1} = \theta_k + \alpha \nabla_{\theta} J(\pi_{\theta})|_{\theta_k}.
+    $$
+
+    How to numerically compute the policy gradient? This involves two steps: 1) deriving the analytical gradient of policy performance, which turns out to have the form of an expected value, and then 2) forming a sample estimate of that expected value, which can be computed with data from a finite number of agent-environment interaction steps.
+    \begin{figure}[H]
+      \includegraphics[width=\linewidth]{derivative.png}
+      \caption{Policy Gradient}
+      \label{fig:policygradient}
+    \end{figure}
+
+    The policy gradient can be estimated with: 
+    $$
+    \hat{g} = \frac{1}{|\mathcal{D}|} \sum_{\tau \in \mathcal{D}} \sum_{t=0}^{T} \nabla_{\theta} \log \pi_{\theta}(a_t |s_t) R(\tau),
+    $$
+    $\mathcal{D} = \{\tau_i\}_{i=1,...,N}$ is the set of trajectories.
+
 
 \section{Ideas}
     \subsection{Observation}
