@@ -1044,6 +1044,7 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeBerlin.sty
@@ -1213,6 +1214,12 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmssi12.tfm
+INPUT ./chatgpt.png
+INPUT ./chatgpt.png
+INPUT chatgpt.png
+INPUT ./chatgpt.png
+INPUT ./chatgpt.png
 OUTPUT slides.nav
 OUTPUT slides.toc
 OUTPUT slides.snm
@@ -1222,3 +1229,4 @@ INPUT ./slides.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb

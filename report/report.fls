@@ -569,6 +569,11 @@ INPUT ./derivative.png
 INPUT derivative.png
 INPUT ./derivative.png
 INPUT ./derivative.png
+INPUT ./Reinforcement_Learning_Taxi_Env.width-1200.png
+INPUT ./Reinforcement_Learning_Taxi_Env.width-1200.png
+INPUT Reinforcement_Learning_Taxi_Env.width-1200.png
+INPUT ./Reinforcement_Learning_Taxi_Env.width-1200.png
+INPUT ./Reinforcement_Learning_Taxi_Env.width-1200.png
 INPUT report.aux
 INPUT ./report.out
 INPUT ./report.out

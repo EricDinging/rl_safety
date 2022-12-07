@@ -22,7 +22,7 @@ def reward_to_go(rews):
     return rtgs
 
 def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2, 
-          epochs=50, batch_size=5000, render=False):
+          epochs=50, batch_size=5000, render=True):
 
     # make environment, check spaces, get obs / act dims
     env = gym.make(env_name)
@@ -65,7 +65,7 @@ def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2,
 
         # reset episode-specific variables
         obs = env.reset()       # first obs comes from starting distribution
-        obs = obs[0]
+        #obs = obs[0]
         done = False            # signal from environment that episode is over
         ep_rews = []            # list for rewards accrued throughout ep
 
@@ -84,7 +84,7 @@ def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2,
 
             # act in the environment
             act = get_action(torch.as_tensor(obs, dtype=torch.float32))
-            obs, rew, done, _ , _= env.step(act)
+            obs, rew, done, _= env.step(act)
 
             # save action, reward
             batch_acts.append(act)
@@ -101,7 +101,7 @@ def train(env_name='CartPole-v0', hidden_sizes=[32], lr=1e-2,
 
                 # reset episode-specific variables
                 obs, done, ep_rews = env.reset(), False, []
-                obs = obs[0]
+                #obs = obs[0]
 
                 # won't render again this epoch
                 finished_rendering_this_epoch = True
@@ -134,4 +134,5 @@ if __name__ == '__main__':
     parser.add_argument('--lr', type=float, default=1e-2)
     args = parser.parse_args()
     print('\nUsing reward-to-go formulation of policy gradient.\n')
-    train(env_name=args.env_name, render=args.render, lr=args.lr)
+    #train(env_name=args.env_name, render=args.render, lr=args.lr)
+    train()
