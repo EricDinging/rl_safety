@@ -135,6 +135,23 @@
     \nabla_{\theta} J(\pi_{\theta}) = E_{\tau \sim \pi_{\theta}}{\sum_{t=0}^{T} \nabla_{\theta} \log \pi_{\theta}(a_t |s_t) \sum_{t'=t}^T R(s_{t'}, a_{t'}, s_{t'+1})}.
     $$
 
+    The policy gradient has the general form, 
+    $$
+    \nabla_{\theta} J(\pi_{\theta}) = E_{\tau \sim \pi_{\theta}}{\sum_{t=0}^{T} \nabla_{\theta} \log \pi_{\theta}(a_t |s_t) \Phi_t},
+    $$
+    where $\Phi_t$ can be the form of, 
+    $$
+    \Phi_t = R(\tau),
+    $$
+    or 
+    $$
+    \Phi_t = \sum_{t'=t}^T R(s_{t'}, a_{t'}, s_{t'+1}),
+    $$
+    or 
+    $$
+    \Phi_t = \sum_{t'=t}^T R(s_{t'}, a_{t'}, s_{t'+1}) - b(s_t).
+    $$
+    
 
 \section{Ideas}
     \subsection{Observation}

@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1670335589 "report.tex" "report.pdf" "report" 1670346140
+["pdflatex"] 1670380727 "/home/eric/Academic/AI-safety-project/report/report.tex" "report.pdf" "report" 1670380727
   "/etc/texmf/web2c/texmf.cnf" 1668478670 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eric/Academic/AI-safety-project/report/report.tex" 1670335589 8240 ccb340d9a4f3c6ccd88fed2ee150e7ca ""
+  "/home/eric/Academic/AI-safety-project/report/report.tex" 1670380726 8680 f9d34f1546343015d56dc6933f07d266 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -84,14 +84,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1668478689 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668478701 2798819 5fee1c0921145f6ac62a4fca41f40c8a ""
-  "derivative.png" 1670346080 30790 476c50148b23be6250ea7b22af6b1278 ""
-  "report.aux" 1670346080 2765 fdba13f57c1dd05674b7390a18c0ce29 "pdflatex"
-  "report.out" 1670346080 1746 1c09eec055fee4db51c844409bb7185b "pdflatex"
-  "report.tex" 1670346080 8240 ccb340d9a4f3c6ccd88fed2ee150e7ca ""
-  "rl_diagram_transparent_bg.png" 1670346080 8106 07acc299a9d3f1a3998f98086c76c4c6 ""
-  "rlalg.png" 1670346080 41940 935b2cb7790b59ad054321d1077539a1 ""
+  "derivative.png" 1669609977 30790 476c50148b23be6250ea7b22af6b1278 ""
+  "report.aux" 1670380727 2765 d21ada7e4652aee4e4af7657d3e53557 "pdflatex"
+  "report.out" 1670380727 1746 1c09eec055fee4db51c844409bb7185b "pdflatex"
+  "report.tex" 1670380726 8680 f9d34f1546343015d56dc6933f07d266 ""
+  "rl_diagram_transparent_bg.png" 1669559303 8106 07acc299a9d3f1a3998f98086c76c4c6 ""
+  "rlalg.png" 1669589422 41940 935b2cb7790b59ad054321d1077539a1 ""
   (generated)
   "report.aux"
+  "report.log"
   "report.out"
   "report.pdf"
-  "report.log"
