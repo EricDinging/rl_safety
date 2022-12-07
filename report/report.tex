@@ -164,7 +164,28 @@ We have an Action Space of size 6 (Four directions, pickup and dropoff) and a St
 Here's our restructured problem statement (from Gym docs):
 "There are 4 locations (labeled by different letters), and our job is to pick up the passenger at one location and drop him off at another. We receive +20 points for a successful drop-off and lose 1 point for every time-step it takes. There is also a 10 point penalty for illegal pick-up and drop-off actions."
 
+\textbf{Q-learning}: A Q-value for a particular state-action combination is representative of the "quality" of an action taken from that state. Better Q-values imply better chances of getting greater rewards.
 
+$$
+  Q^*(s, a) = E_{s' \sim P} [r(s, a) + \gamma \max_{a'} Q^*(s', a')]
+$$
+
+The Q-value of a state-action pair is the sum of the instant reward and the discounted future reward (of the resulting state). The way we store the Q-values for each state and action is through a Q-table ($500 \times 6$ matrix)
+
+\textbf{Explore vs. Exploit}
+
+\subsection{Explore}
+  \begin{enumerate}
+    \item Initialize the Q-table by all zeros.
+    \item Start exploring actions: For each state, select any one among all possible actions for the current state (S). (Explore vs Exploit)
+    \item Travel to the next state (S') as a result of that action (a).
+    \item For all possible actions from the state (S') select the one with the highest Q-value.
+    \item Update Q-table values using the equation.
+    \item Set the next state as the current state.
+    \item If goal state is reached, then end and repeat the process.
+  \end{enumerate}
+\subsection{Exploit}
+  After enough random exploration of actions, the Q-values tend to converge serving our agent as an action-value function which it can exploit to pick the most optimal action from a given state.
     
     
 \section{What to Explore Next}

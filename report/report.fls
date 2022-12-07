@@ -574,9 +574,11 @@ INPUT ./Reinforcement_Learning_Taxi_Env.width-1200.png
 INPUT Reinforcement_Learning_Taxi_Env.width-1200.png
 INPUT ./Reinforcement_Learning_Taxi_Env.width-1200.png
 INPUT ./Reinforcement_Learning_Taxi_Env.width-1200.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT report.aux
 INPUT ./report.out
 INPUT ./report.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
