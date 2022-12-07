@@ -31,7 +31,7 @@ print(env.P[328])
 #This dictionary has the structure {action: [(probability, nextstate, reward, done)]}
 
 #-------------------------------------------
-# A Brute Force Method
+#A Brute Force Method
 
 # epochs = 0
 # penalties, reward = 0, 0
@@ -87,7 +87,7 @@ print(env.P[328])
 #     print(f"Reward: {frame['reward']}")
 
 
-# The agent has no memory of which action was best for each state, which is exactly what Reinforcement Learning will do for us
+#The agent has no memory of which action was best for each state, which is exactly what Reinforcement Learning will do for us
 
 
 #----------------------------------------------------------
