@@ -199,6 +199,6 @@ def print_frames_r(frames):
         print(f"State: {frame['state']}")
         print(f"Action: {frame['action']}")
         print(f"Reward: {frame['reward']}")
-        sleep(.1)
+        sleep(.8)
         
 print_frames_r(frames)

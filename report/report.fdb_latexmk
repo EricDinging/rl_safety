@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1670428276 "/home/eric/Academic/AI-safety-project/report/report.tex" "report.pdf" "report" 1670428276
+["pdflatex"] 1670439825 "/home/eric/Academic/AI-safety-project/report/report.tex" "report.pdf" "report" 1670439826
   "/etc/texmf/web2c/texmf.cnf" 1668478670 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/eric/Academic/AI-safety-project/report/report.tex" 1670428275 10746 b6d4cfb4b1d9adbe9d3fb3e41988dd08 ""
+  "/home/eric/Academic/AI-safety-project/report/report.tex" 1670439825 11540 af90fb88028066c47c3235034ef7b33c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -88,9 +88,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1668478701 2798819 5fee1c0921145f6ac62a4fca41f40c8a ""
   "Reinforcement_Learning_Taxi_Env.width-1200.png" 1670421626 44268 2dbf61a727df5a9ec6bfbb5f1bec9178 ""
   "derivative.png" 1669609977 30790 476c50148b23be6250ea7b22af6b1278 ""
-  "report.aux" 1670428276 3379 4f4e75512247910c0d2fe7980b6dd545 "pdflatex"
-  "report.out" 1670428276 2187 2924d91c0fc86bff8191e0674cc5e35f "pdflatex"
-  "report.tex" 1670428275 10746 b6d4cfb4b1d9adbe9d3fb3e41988dd08 ""
+  "report.aux" 1670439826 3592 90c727810b777659536a30515592fdb9 "pdflatex"
+  "report.out" 1670439826 2529 4b9bd6176b974da50146db89b7c66336 "pdflatex"
+  "report.tex" 1670439825 11540 af90fb88028066c47c3235034ef7b33c ""
   "rl_diagram_transparent_bg.png" 1669559303 8106 07acc299a9d3f1a3998f98086c76c4c6 ""
   "rlalg.png" 1669589422 41940 935b2cb7790b59ad054321d1077539a1 ""
   (generated)

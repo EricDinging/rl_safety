@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.14)  7 DEC 2022 10:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.11.14)  7 DEC 2022 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -227,11 +227,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box54
-) (./report.aux
-
-LaTeX Warning: Label `fig:ag' multiply defined.
-
-)
+) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -288,7 +284,7 @@ LaTeX Info: Redefining \nameref on input line 12.
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-<rl_diagram_transparent_bg.png, id=73, 429.10312pt x 150.5625pt>
+<rl_diagram_transparent_bg.png, id=81, 429.10312pt x 150.5625pt>
 File: rl_diagram_transparent_bg.png Graphic file (type png)
 <use rl_diagram_transparent_bg.png>
 Package pdftex.def Info: rl_diagram_transparent_bg.png  used on input line 26.
@@ -296,43 +292,40 @@ Package pdftex.def Info: rl_diagram_transparent_bg.png  used on input line 26.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./rl_diagram_transparent_bg.png>]
-<rlalg.png, id=86, 905.3825pt x 470.75874pt>
+<rlalg.png, id=94, 905.3825pt x 470.75874pt>
 File: rlalg.png Graphic file (type png)
 <use rlalg.png>
 Package pdftex.def Info: rlalg.png  used on input line 81.
 (pdftex.def)             Requested size: 345.0pt x 179.37863pt.
  [2] [3 <./rlalg.png>]
-<derivative.png, id=109, 837.1275pt x 339.2675pt>
-File: derivative.png Graphic file (type png)
-<use derivative.png>
-Package pdftex.def Info: derivative.png  used on input line 122.
-(pdftex.def)             Requested size: 345.0pt x 139.82014pt.
- [4]
-<Reinforcement_Learning_Taxi_Env.width-1200.png, id=120, 502.87875pt x 496.85625pt>
+<Reinforcement_Learning_Taxi_Env.width-1200.png, id=117, 502.87875pt x 496.85625pt>
 File: Reinforcement_Learning_Taxi_Env.width-1200.png Graphic file (type png)
 <use Reinforcement_Learning_Taxi_Env.width-1200.png>
-Package pdftex.def Info: Reinforcement_Learning_Taxi_Env.width-1200.png  used on input line 157.
+Package pdftex.def Info: Reinforcement_Learning_Taxi_Env.width-1200.png  used on input line 116.
 (pdftex.def)             Requested size: 345.0pt x 340.86758pt.
- [5 <./derivative.png>] [6 <./Reinforcement_Learning_Taxi_Env.width-1200.png>] [7] (./report.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+ [4] [5 <./Reinforcement_Learning_Taxi_Env.width-1200.png>] [6]
+<derivative.png, id=145, 837.1275pt x 339.2675pt>
+File: derivative.png Graphic file (type png)
+<use derivative.png>
+Package pdftex.def Info: derivative.png  used on input line 165.
+(pdftex.def)             Requested size: 345.0pt x 139.82014pt.
+ [7 <./derivative.png>] [8] (./report.aux)
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 2924D91C0FC86BFF8191E0674CC5E35F;2187.
+(rerunfilecheck)             Checksum: 4B9BD6176B974DA50146DB89B7C66336;2529.
  ) 
 Here is how much of TeX's memory you used:
- 9082 strings out of 478287
- 142478 string characters out of 5849288
- 437440 words of memory out of 5000000
- 27122 multiletter control sequences out of 15000+600000
+ 9090 strings out of 478287
+ 142565 string characters out of 5849288
+ 437380 words of memory out of 5000000
+ 27124 multiletter control sequences out of 15000+600000
  474642 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,7n,63p,575b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on report.pdf (7 pages, 252844 bytes).
+Output written on report.pdf (8 pages, 253649 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
